@@ -16,7 +16,7 @@ require_once("C://xampp/htdocs/ProyectoTareas/views/head/head.php");
         </div>
         <div class="mb-3">
             <label class="form-label">Estado</label>
-            <input type="text" class="form-control" name="estado" id="estado" required>
+            <input type="text" class="form-control" name="estado" id="estado" value="Backlog" readonly>
         </div>
         <div class="mb-3">
             <label class="form-label">Fecha de creación</label>

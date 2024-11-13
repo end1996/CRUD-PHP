@@ -48,7 +48,7 @@ label {
 }
 
 /*Define un color personalizado para los textfields deshabilitados*/
-#staticDate, #staticId {
+#staticDate, #staticId, #estado {
     background-color: rgba(245, 245, 245, 0.193);
     color: #ffffff;
 }

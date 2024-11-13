@@ -1,0 +1,54 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(26,0,88,0.9332107843137255) 22%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+#imagePortrait {
+    /*Posicionan la imagen al centro y al pie del DOM*/
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    /*Propiedades para aplicar responsive,la imagen se ajusta de acuerdo al tamaño de la pantalla*/
+    max-width: 100%;
+    height: auto;
+}
+
+.table-dark th {
+    color: rgba(171, 153, 252, 0.828) !important;
+}
+
+.modal-title {
+    color: #000 !important;
+}
+
+.modal-body {
+    color:rgb(117, 117, 117) !important;
+}
+
+.btn-agregar {
+    background-color: #bfff00 !important;
+    border-color: #28a745!important;
+    color: #000 !important;
+}
+  
+.btn-agregar:hover {
+    background-color: #2d8a41 !important;
+    border-color: #259640 !important;
+    color: #ffffff !important;
+}
+
+/*Sobreescribiendo propiedades bootstrap*/
+label {
+    color:#ffffff !important;
+    font-weight: bold !important;
+}
+
+/*Define un color personalizado para los textfields deshabilitados*/
+#staticDate, #staticId {
+    background-color: rgba(245, 245, 245, 0.193);
+    color: #ffffff;
+}

@@ -14,7 +14,7 @@ $task = $obj->mostrar($_GET['id']);
         <div class="mb-3 row">
             <label for="staticId" class="col-sm-2 col-form-label">ID</label>
             <div class="col-sm-10">
-                <input type="number" name="id" readonly disabled class="form-control" id="staticId"
+                <input type="number" name="id" readonly class="form-control" id="staticId"
                     value="<?= $task[0] ?>">
             </div>
         </div>
@@ -44,7 +44,7 @@ $task = $obj->mostrar($_GET['id']);
         <div class="mb-3 row">
             <label for="staticDate" class="col-sm-2 col-form-label">Fecha de creación</label>
             <div class="col-sm-10">
-                <input type="datetime-local" name="fechaCreacion" readonly disabled class="form-control" id="staticDate"
+                <input type="datetime-local" name="fechaCreacion" readonly class="form-control" id="staticDate"
                     value="<?= $task[4] ?>">
             </div>
         </div>

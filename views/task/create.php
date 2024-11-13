@@ -23,6 +23,7 @@ require_once("C://xampp/htdocs/ProyectoTareas/views/head/head.php");
     </form>
 </div>
 
+
 <?php
 require_once("C://xampp/htdocs/ProyectoTareas/views/head/footer.php");
 ?>

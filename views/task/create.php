@@ -1,5 +1,6 @@
 <?php
 require_once("C://xampp/htdocs/ProyectoTareas/views/head/head.php");
+require_once("C://xampp/htdocs/ProyectoTareas/helpers/helpers.php");
 ?>
 <div class="text-center text-light mb-5">
     <h2>Agregar nueva tarea</h2>
@@ -20,11 +21,12 @@ require_once("C://xampp/htdocs/ProyectoTareas/views/head/head.php");
         </div>
         <div class="mb-3">
             <label class="form-label">Fecha de creación</label>
-            <input type="datetime-local" class="form-control" name="fechaCreacion" id="fechaCreacion" required>
+            <input type="datetime-local" class="form-control" name="fechaCreacion" id="fechaCreacion"
+                min="<?= fechaHoraActual() ?>" required>
         </div>
         <div class="mb-3">
             <label class="form-label">Fecha de vencimiento</label>
-            <input type="datetime-local" class="form-control" name="fechaVencimiento" id="fechaVencimiento" required>
+            <input type="datetime-local" class="form-control" name="fechaVencimiento" id="fechaVencimiento" min="<?= fechaHoraActual() ?>" required>
         </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-success">Guardar</button>

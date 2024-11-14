@@ -1,6 +1,7 @@
 <?php
 require_once "c://xampp/htdocs/ProyectoTareas/views/head/head.php";
 require_once "c://xampp/htdocs/ProyectoTareas/controllers/TaskController.php";
+require_once "C://xampp/htdocs/ProyectoTareas/helpers/helpers.php";
 $obj = new TaskController();
 //Pruebas de depuración
 $task = $obj->mostrar($_GET['id']);
@@ -60,7 +61,7 @@ $task = $obj->mostrar($_GET['id']);
             <label for="inputDate" class="col-sm-2 col-form-label">Fecha de vencimiento</label>
             <div class="col-sm-10">
                 <input type="datetime-local" name="fechaVencimiento" class="form-control" id="inputDate"
-                    value="<?= $task[5] ?>">
+                    value="<?= $task[5] ?>" min="<?= fechaHoraActual() ?>">
             </div>
         </div>
         <div class="text-center">

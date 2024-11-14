@@ -10,7 +10,7 @@ $date = $obj->mostrar($_GET['id']);
     <h2>Detalle del registro</h2>
 </div>
 <div>
-    <a href="index.php" class="btn btn-primary">Regresar</a>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -30,7 +30,10 @@ $date = $obj->mostrar($_GET['id']);
         </div>
     </div>
 </div>
-<div class="mt-5">
+<div class="m-5">
+    <div class="mb-3">
+        <a href="index.php" class="btn btn-primary">Regresar</a>
+    </div>
     <table class="table table-dark table-hover">
         <thead>
             <tr>
